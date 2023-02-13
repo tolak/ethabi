@@ -71,6 +71,7 @@ pub enum Token {
 	Tuple(Vec<Token>),
 }
 
+#[cfg(feature = "hex-alloc")]
 impl fmt::Display for Token {
 	fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
 		match *self {

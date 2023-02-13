@@ -33,6 +33,7 @@ default = [
 	"std",
 	"full-serde",
 	"rlp",
+	"hex-alloc",
 ]
 std = [
 	"hex/std",
@@ -64,4 +65,8 @@ rlp = [
 
 parity-codec = [
 	"ethereum-types/codec"
+]
+
+hex-alloc = [
+	"hex/alloc",
 ]
